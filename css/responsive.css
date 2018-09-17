@@ -78,6 +78,21 @@
 		width: 96%;
 	}
 	
+	.client{
+
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.testimonials{
+		-webkit-flex-basis: auto;
+		        flex-basis: auto;
+	    margin-bottom: 40px;
+	}
+	.client__clients{
+		-webkit-flex-basis: auto;
+		        flex-basis: auto;
+	}	
 
 }
 @media screen and (max-width: 645px){
