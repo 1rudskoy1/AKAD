@@ -73,7 +73,15 @@
 		width: 100%;
 		margin-left: 0;
 	}
-
+	.description{
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	
+	}
+	.description__image{
+		margin-top: 50px;
+	}
 }
 
 @media screen and (max-width: 774px){
@@ -130,5 +138,7 @@
 		-webkit-justify-content: center;
 		        justify-content: center;
 	}
-	
+	.description{
+		padding: 30px;
+	}
 }
