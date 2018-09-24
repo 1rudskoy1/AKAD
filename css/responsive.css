@@ -82,6 +82,12 @@
 	.description__image{
 		margin-top: 50px;
 	}
+	.advances__advance{
+		-webkit-flex-basis: 320px;
+		        flex-basis: 320px;
+	    margin: 25px;
+	}
+	
 }
 
 @media screen and (max-width: 774px){
@@ -108,6 +114,12 @@
 		-webkit-flex-basis: auto;
 		        flex-basis: auto;
 	}	
+
+	.advances__advance{
+		-webkit-flex-basis: 250px;
+		        flex-basis: 250px;
+	    margin: 25px 0 25px 0;
+	}
 
 }
 @media screen and (max-width: 645px){
