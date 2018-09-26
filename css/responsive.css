@@ -87,7 +87,12 @@
 		        flex-basis: 320px;
 	    margin: 25px;
 	}
-	
+	.articles{
+		margin-right: 0;
+	}
+	.sitebar{
+		display: none;
+	}	
 }
 
 @media screen and (max-width: 774px){
@@ -120,7 +125,12 @@
 		        flex-basis: 250px;
 	    margin: 25px 0 25px 0;
 	}
-
+	.blog{
+		margin-top: 100px;
+	}
+	.articles{
+		min-width: 550px;
+	}
 }
 @media screen and (max-width: 645px){
 	.wrap{
@@ -152,5 +162,8 @@
 	}
 	.description{
 		padding: 30px;
+	}
+	.articles{
+		min-width: 480px;
 	}
 }
