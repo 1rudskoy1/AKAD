@@ -166,4 +166,71 @@
 	.articles{
 		min-width: 480px;
 	}
+	.on{
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav__items{
+		padding:0;
+	}
+	.History__story_text{
+		width: 100%;
+	}
+	.contact{
+		width: 95%;
+	}
+	.contact__forma{
+		width: 100%;
+		flex-direction: column;
+	}
+	.contact__forma .input{
+		width: 100%;
+		margin: 10px 0;
+	}
+	.contact__forma_message{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 500px){
+	
+	.History__img{
+		display: none;
+	}
+	.history__button{
+		margin: 0 auto;
+	}
+	.History__story{
+		text-align: center;
+	}
+	.Why{
+		margin-top: 80px;
+	}
+	.title{
+		margin-top: 80px;
+	}
+	.reasons__image{
+		display: none;
+	}
+	.Portfolio__head{
+		margin-top: 55px;
+	}
+	.Portfolio__wrap {
+    	flex-direction: column;
+    	align-items: center;
+	}
+	.right-images {
+    	margin-top: 30px;
+	}
+	.navigation{
+		display: none;
+	}
+	.Forma {
+    	height: 280px;
+	}
+	.wrap {
+    	margin-left: 15px;
+	}
+	.articles {
+		min-width: 300px;
+	}
 }
