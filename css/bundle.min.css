@@ -107,8 +107,9 @@ body{
       margin: 0 5px;
       cursor: pointer; }
       .client .dots__dot_active {
-        padding: 3px 15px;
-        background: #7beec7; }
+        padding: 3px 10px;
+        background: #7beec7;}
+
 
 .testimonials {
   margin-right: 30px;
@@ -728,6 +729,9 @@ body{
     width: 300px;
     margin: 10px; }
 
+.dots__dot:hover{
+  background: #7beec7; 
+}
 .active {
   background: #7beec7;
   width: 50px;

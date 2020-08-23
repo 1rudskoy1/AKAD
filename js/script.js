@@ -1,48 +1,45 @@
-var TabsIndex = 1;
-var categories = document.querySelectorAll('.Posts__categories_category');
-var tags = document.querySelectorAll('.Tags__all-tags_tag');
-for (let i = 0; i< categories.length;i++) {
+// tags and category on page blog
 
-	categories[i].onclick = function (e){
-		var target = e.target;
-		for (let i = 0; i < categories.length; i++) {
-				categories[i].className = 'Posts__categories_category';
-				target.className +=  " category-active";
-			}
-		
-		}
-	}
-	for (let i = 0; i< tags.length;i++) {
-
-		tags[i].onclick = function (e){
-			var target = e.target;
-			for (let i = 0; i < tags.length; i++) {
-				tags[i].className = 'Tags__all-tags_tag';
-				target.className +=  " tags-active";
-			}
-		
-		}
-	}
-
-
-showTabs(TabsIndex);
-
-function currentTabs(n){
-	showTabs(TabsIndex = n);
+function tabUp(clases, active){
+	let tabs = document.querySelectorAll(clases);
+	let classActive = active;
+	for (i = 0; i < tabs.length; i++) {
+		tabs[i].addEventListener("click", function(e){
+			if(e.target.classList.contains(classActive) === false){
+				for(let j = 0; j < tabs.length; j++){
+					tabs[j].classList.remove(classActive);
+				}
+					e.target.classList.add(classActive);
+			}	
+		});
+	}	
 }
+tabUp(".Tags__all-tags_tag", "tags-active");
+tabUp(".Posts__categories_category", "category-active");
 
-function showTabs(n){
-	var i;
-	var dots = document.querySelectorAll(".dots__dot");
-	var content = document.querySelectorAll(".testimonials__content");
-	for(i =0;i < dots.length;i++){
-		content[i].style.display = "none";
-		dots[i].style.background = "#81868e";
 
+//Slide on page about
+
+function slide(classes, target){
+	let slides = document.querySelectorAll(classes);
+	let tabs = document.querySelectorAll(target);
+	let i = 0;
+	for (i = 1; i <slides.length;i++){
+		slides[i].style.display = " none";
 	}
-	content[TabsIndex - 1].style.display = "block";
-	dots[TabsIndex-1].style.background = "#19bd9a";
+	for (i = 0; i < tabs.length; i++) {
+		tabs[i].addEventListener("click", function(e){
+			if(e.target.classList.contains("dots__dot_active") === false){
+				for(let j = 0; j < tabs.length; j++){
+					tabs[j].classList.remove("dots__dot_active");
+					slides[j].style.display = "none";
+				}
+					e.target.classList.add("dots__dot_active");
+					slides[$(e.target).index()].style.display = "block";
+
+			}	
+		});
+	}	
 }
-
-
+slide(".testimonials__content", ".dots__dot");
 
